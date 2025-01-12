@@ -3,36 +3,56 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Styles/style.css" />
     <title>About me page</title>
   </head>
-  <body>
+  <body class="about other">
+     <header>
+      <nav>
+        <button id="toggleButton"><img class="menu" src="../Src/images/menu.png" alt=""></button>
+        <ul id="menuList">
+          <li><a href="home.html" target="_self">Home</a></li>
+          <li><a href="about_me.html" target="_self">About me</a></li>
+          <li><a href="skills.html" target="_self">Skills</a></li>
+          <li><a href="projects.html" target="_self">Project</a></li>
+          <li><a href="contact_me.html" target="_self">Contact me</a></li>
+        </ul>
+      </nav>
+    </header>
     <main class="aboutMe">
-      <section class="introduction">
-        <h1>Tsion Shimelis</h1>
-        <h2>Front End Developer</h2>
-        <hr />
-        <p>
-          Freeze! Hello! It's me again. I enjoy combining my artistic vision with technical
-          know-how to make concepts a reality. I enjoy making the web a more
-          interesting place for everyone, whether that means creating slick user
-          experiences or resolving challenging design problems!
-        </p>
+      <div class="abt">
+        <section class="introduction">
+          <p>
+            <span class="extra-bold">Freeze!</span> Hello! It's me again. I
+            enjoy combining my artistic vision with technical know-how to make
+            concepts a reality. I enjoy making the web a more interesting place
+            for everyone, whether that means creating slick user experiences or
+            resolving challenging design problems!
+          </p>
 
-        <p>
-          When I'm not coding, you can find me either curled up in my bed
-          watching my all time favourite "The Office" or exploring the vibrant
-          city of Addis Ababa.
-        </p>
-      </section>
-      <!--background video is to be add using Css in the future-->
-      <aside>
-        <h2>PERSONAL INFO</h2>
-        <hr />
-        <p><b>NAME</b> : Tsion Shimelis</p>
-        <p><b>DATE OF BIRTH</b> : 25/11/2004</p>
-        <p><b>PHONE</b> : +251961610085</p>
-        <p><b>EMAIL</b> : tsionshimelis900@gmail.com</p>
-      </aside>
+          <p>
+            When I'm not coding, you can find me either curled up in my bed
+            watching my all time favourite "The Office" or exploring the vibrant
+            city of Addis Ababa.
+          </p>
+        </section>
+        <aside class="personal-info">
+          <video autoplay muted loop id="myVideo1">
+            <source src="../Src/video/books.mp4" type="video/mp4" />
+          </video>
+          <video autoplay muted loop id="myVideo2">
+            <source src="../Src/video/books2.mp4" type="video/mp4" />
+          </video>
+          <h2>PERSONAL INFO</h2>
+          <hr />
+          <p><b>NAME</b> : Tsion Shimelis</p>
+          <p><b>DATE OF BIRTH</b> : 25/11/2004</p>
+          <p><b>PHONE</b> : +251961610085</p>
+          <p><b>EMAIL</b> : tsionshimelis900@gmail.com</p>
+        </aside>
+      </div>
     </main>
+      <!-- Link to the JavaScript file -->
+    <script src="../Src/Script/script.js"></script>
   </body>
 </html>

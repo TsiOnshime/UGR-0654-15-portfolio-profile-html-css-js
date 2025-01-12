@@ -1,0 +1,500 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: "Poppins Light";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Poppins Light"), url("Poppins-Light.woff") format("woff");
+}
+h1 {
+  text-align: center;
+}
+h2 {
+  font-size: 29px;
+  font-weight: lighter;
+}
+h3 {
+  margin-left: 35px;
+  font-size: 23px;
+  font-weight: lighter;
+}
+body {
+  color: #350404;
+  font-family: "Poppins Light";
+  background-color: #fce8e5;
+}
+
+body.home {
+  background-image: url("../images/Background1.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  background-attachment: fixed;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+
+  /* align-items: center; */
+}
+
+.image,
+.image img {
+  width: 177px;
+  height: 177px;
+  object-fit: cover;
+  background-color: #e9c1c1;
+  border-radius: 50%;
+  /* This creates the circular shape */
+}
+
+aside h3 {
+  margin-top: 15px;
+}
+aside h2:first-child {
+  margin-top: 10px;
+  margin-left: -100px;
+}
+aside h2:nth-child(2) {
+  padding-left: 100px;
+}
+
+aside .intro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* About page */
+.abt {
+  width: 100vw;
+}
+#myVideo1 {
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 100vw;
+  z-index: -1;
+}
+#myVideo2 {
+  display: none;
+}
+
+hr {
+  border-color: #350404;
+}
+.extra-bold {
+  font-weight: 900;
+  text-shadow: 0.5px 0.5px 0 black;
+}
+.introduction,
+.personal-info {
+  padding: 15px;
+  text-align: center;
+  margin: 40px 0px 0px 0px;
+}
+
+/* Skills page */
+h1 {
+  margin-bottom: 20px;
+}
+
+.html p,
+.css p,
+.javascript p,
+.react p,
+.python p,
+.figma p {
+  text-align: center;
+}
+.skillsContainer {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: auto;
+  margin: 0 auto;
+  height: calc(100vh - 100px);
+}
+
+svg {
+  display: block; /* Ensure SVGs are block elements */
+  margin: 0 auto; /* Center the SVGs */
+}
+.skill {
+  width: 160px;
+  height: 160px;
+  position: relative;
+  margin: 10px auto;
+}
+.outer {
+  position: relative; /* Set position to relative */
+  padding: 20px; /* This can be adjusted or removed */
+  height: 160px;
+  width: 160px;
+  border: 1px solid #e9c1c1;
+  border-radius: 50%;
+}
+
+.inner {
+  height: 120px;
+  width: 120px;
+  border-radius: 50%;
+  border: 1px solid #e9c1c1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+#number {
+  font-weight: 600;
+  color: #555;
+}
+circle {
+  fill: none;
+  stroke: url(#GradientColor);
+  stroke-width: 20px;
+  stroke-dasharray: 440; /* Adjusted for 60% */
+  stroke-dashoffset: 440;
+}
+
+#HTML,
+#CSS,
+#Javascript,
+#Python,
+#React,
+#Figma {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+}
+.html circle {
+  animation: fill-1 3s forwards;
+}
+@keyframes fill-1 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 110;
+  }
+}
+
+.css circle {
+  animation: fill-2 3s forwards;
+}
+@keyframes fill-2 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 154;
+  }
+}
+
+.javascript {
+  animation: fill-3 3s forwards;
+}
+
+@keyframes fill-3 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 220;
+  }
+}
+
+.python {
+  animation: fill-4 3s forwards;
+}
+@keyframes fill-4 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 132;
+  }
+}
+
+.react {
+  animation: fill-5 3s forwards;
+}
+
+@keyframes fill-5 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 198;
+  }
+}
+
+.figma {
+  animation: fill-6 3s forwards;
+}
+
+@keyframes fill-6 {
+  from {
+    stroke-dashoffset: 440;
+  }
+  to {
+    stroke-dashoffset: 176;
+  }
+}
+
+/* projects page */
+.card-container {
+  width: 100;
+  margin: 0 auto;
+}
+body .main {
+  display: grid;
+  grid-template-columns: 1fr;
+  overflow-y: auto;
+  height: calc(100vh - 100px);
+}
+
+.card {
+  width: 250px;
+  height: 350px;
+
+  background-color: #e9c1c1;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  margin: 20px;
+  padding: 15px;
+}
+.card img {
+  width: 100%;
+  height: 250px;
+  border-radius: 8px;
+}
+.card-content {
+  padding: 16px;
+}
+
+.card-content p {
+  color: black;
+  font-size: 15px;
+  line-height: 1.3;
+  text-align: center;
+}
+.card:hover {
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* contact me page */
+
+.contactMe h1 {
+  margin-bottom: 30px;
+}
+form {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  gap: 20px;
+}
+form div,
+form input,
+form textarea {
+  width: 100%;
+}
+form .name {
+  display: flex;
+  gap: 7px;
+}
+
+form input,
+form textarea {
+  background: #fce8e5;
+  border: 2px solid #e9c1c1;
+  height: 2em;
+  padding: 3px;
+}
+form > input,
+form textarea {
+  width: 98.5%;
+}
+form textarea {
+  height: 7em;
+}
+
+input,
+input::placeholder,
+textarea::placeholder {
+  color: rgba(166, 9, 9, 0.7);
+}
+
+form button {
+  width: 80px;
+  padding: 10px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(to bottom, #a60909, #fce8e5);
+  color: #ffff;
+  align-self: center;
+}
+
+/* footer */
+
+footer {
+  background-color: #e9c1c1;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5px;
+}
+
+@media screen and (min-width: 932px) {
+  body.home {
+    background-image: url("../images/Screenshot\ 2025-01-08\ at\ 10.05.29\ AM.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+  }
+  h2 {
+    font-size: 49px;
+    font-weight: lighter;
+  }
+
+  .skillsContainer,
+  .abt,
+  body .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px 20px;
+  }
+
+  #myVideo1 {
+    display: none;
+  }
+  #myVideo2 {
+    display: block;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100vw;
+    z-index: -1;
+  }
+  .aboutMe {
+    margin-top: 15%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  .aboutMe {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+}
+@media screen and (min-width: 960px) and (max-width: 1024px) {
+  .abt {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px 20px;
+  }
+}
+
+@media screen and (min-width: 1020px) {
+  .skillsContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+  }
+
+  body .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+@media screen and (min-width: 1024px) {
+  nav button {
+    display: none;
+  }
+ 
+
+  .home nav ul li a {
+    color: #350404;
+    font-size: large;
+    font-weight: 500px;
+    text-decoration: none;
+    margin: 20px;
+  }
+  .home nav ul li a:hover {
+    font-weight: bolder;
+  }
+  .home nav ul li{
+    list-style: none;
+  }
+
+  .home header ul {
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+  .other header ul{
+    display: none;
+  }
+}
+@media screen and (max-width: 1024px) {
+  nav {
+    margin: 15px;
+    width: fit-content;
+    padding: 5px;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+   nav ul li a {
+    color: #350404;
+    font-size: small;
+    text-decoration: none;
+    margin: 20px;
+  }
+
+  nav ul {
+    list-style: none;
+    padding: 5px;
+    border-radius: 20px;
+    display: none;
+  }
+  .menu {
+    max-width: 30px;
+  }
+  nav button {
+    position: absolute;
+    top: 0;
+    right: 0;
+
+    border: 0px;
+    background-color: #fce8e5;
+  }
+  nav ul {
+    margin-top: 20px;
+    margin-right: 20px;
+    display: none;
+    flex-direction: column;
+    background-color: #fce8e5;
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #350404;
+    width: 130px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  nav ul li {
+    font-weight: bolder;
+  }
+
+  nav button {
+    display: block;
+  }
+}
