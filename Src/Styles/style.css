@@ -439,6 +439,9 @@ footer {
   }
   .menu {
     max-width: 30px;
+    position: absolute;
+    top: 0;
+    right: 0;
   }
   nav button {
     position: absolute;
