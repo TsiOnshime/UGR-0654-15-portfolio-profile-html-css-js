@@ -415,36 +415,6 @@ footer {
     grid-template-columns: 1fr 1fr 1fr;
   }
 }
-@media screen and (min-width: 1024px) {
-  nav button {
-    display: none;
-  }
- 
-
-  .home nav ul li a {
-    color: #350404;
-    font-size: large;
-    font-weight: 500px;
-    text-decoration: none;
-    margin: 20px;
-  }
-  .home nav ul li a:hover {
-    font-weight: bolder;
-  }
-  .home nav ul li{
-    list-style: none;
-  }
-
-  .home header ul {
-    display: flex;
-    height: 100px;
-    justify-content: flex-end;
-    margin-top: 25px;
-  }
-    .others #menuList{
-  display: none;
-}
-}
 @media screen and (max-width: 1024px) {
   nav {
     margin: 15px;
@@ -454,7 +424,7 @@ footer {
     top: 0;
     right: 0;
   }
-   nav ul li a {
+  nav ul li a {
     color: #350404;
     font-size: small;
     text-decoration: none;
@@ -498,3 +468,34 @@ footer {
     display: block;
   }
 }
+@media screen and (min-width: 1024px) {
+  #menuList {
+    display: none;
+  }
+  .home header #menuList {
+    display: flex;
+    height: 100px;
+    justify-content: flex-end;
+    margin-top: 25px;
+  }
+
+  nav button {
+    display: none;
+  }
+
+  .home nav ul li a {
+    color: #350404;
+    font-size: large;
+    font-weight: 500px;
+    text-decoration: none;
+    margin: 20px;
+  }
+  .home nav ul li a:hover {
+    font-weight: bolder;
+  }
+  .home nav ul li {
+    list-style: none;
+  }
+}
+
+
