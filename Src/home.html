@@ -4,11 +4,19 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Home Page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link rel="stylesheet" href="Styles/style.css" />
   </head>
-  <body>
+  <body class="home">
     <header>
       <nav>
-        <ul>
+        <button id="toggleButton">
+          <img class="menu" src="../Src/images/menu.png" alt="" />
+        </button>
+        <ul id="menuList">
           <li><a href="home.html" target="_self">Home</a></li>
           <li><a href="about_me.html" target="_self">About me</a></li>
           <li><a href="skills.html" target="_self">Skills</a></li>
@@ -17,12 +25,23 @@
         </ul>
       </nav>
     </header>
-    <section class="home">
-      <img src="images/my_pic.png" alt="My Picture" />
+    <section>
+      <div class="wrapper">
+        <div class="image">
+          <img id="me" src="images/my_pic.png" alt="My Picture" />
+        </div>
+      </div>
+
       <aside>
-        <h2>Hello World! I'm Tsion Shimelis</h2>
-        <h3>A Front End Developer</h3>
+        <div class="intro">
+          <h2>Hello World!</h2>
+          <h2>I'm Tsion Shimelis</h2>
+
+          <h3>A Front End Developer</h3>
+        </div>
       </aside>
     </section>
+    <!-- Link to the JavaScript file -->
+    <script src="../Src/Script/script.js"></script>
   </body>
 </html>
